@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{%  block projects  %}<!-- fill block in base -->
+
+    <br>
+      <ul class="nav justify-content-center nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" style="color: #FFFFFF" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" style="background-color: #2d637f" aria-current="page" href="#">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color: #FFFFFF" href="/resume">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color: #FFFFFF" href="/contact">Contact</a>
+      </li>
+    </ul>
+    <br>
+
+<br>
+{%  endblock %}
+
+{%  block projects1  %}
+{% for project in projects %}
+<a href="{{project.project_url}}">
+<div class="card1 card mb-3" >
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{project.image_url}}" style="padding: 10px; margin-right: 0; height: 50px; width: 80px; overflow: hidden;" class=" rounded-start" alt="..."><br>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title" style="color:white">{{project.name}}</h5>
+        <p class="card-text" style="color:white">{{project.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+</a>
+<br>
+{% endfor %}
+{%  endblock %}
+
+<!-- lavendar hex: 9d84db -->
+
+
+{%  block projects4  %} <!-- WORKING -->
+{% for project in projects %}
+
+  <a href="{{project.project_url}}">
+    <div style="width: 300px" class="card1">
+      <img src="{{project.image_url}}" style="object-fit: cover; height: 200px; width: 100%; overflow: hidden; margin: auto;" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color:white">{{project.name}}</h5>
+        <p class="card-text" style="color:white">{{project.description}}</p>
+      </div>
+      <div class="card-footer">
+        <medium class="text-body-secondary">Last updated 3 mins ago</medium>
+      </div>
+    </div>
+  </a>
+<br>
+{% endfor %}
+{%  endblock %}
+
+
+
+{%  block projects2  %} <!-- WORKING -->
+{% for project in projects %}
+<a href="{{project.project_url}}">
+<div class="card1 mb-3" style="max-width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-5" style="padding-left: 15px; border-right: 1px solid #3e3f40; margin-top: auto; margin-bottom: auto; margin-left: auto; margin-right: auto; ">
+      <img src="{{project.image_url}}" style="border-radius: 25px; padding:15px; object-fit: cover; height: 220px; width: 100%; overflow: hidden; margin: auto;" class="card-img-top" alt="...">
+    </div>
+    <div class="col-md-4" style="border-right: 1px solid #3e3f40;">
+      <div class="card-body" style="padding: 15px">
+        <h5 class="card-title" style="color:white">{{project.name}}</h5>
+        <p class="card-text" style="color:#e6e3e3">{{project.description}}</p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card-body" style="padding: 15px; padding-right: 23px">
+        <h5 class="card-title" style="color:white">Skills</h5>
+        <p class="card-text" style="color:#e6e3e3">{{project.skills}}</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </a>
+<br>
+{% endfor %}
+{%  endblock %}
+
+
+{%  block projects3  %}
+{% for project in projects %}
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+  {% endfor %}
+{%  endblock %}

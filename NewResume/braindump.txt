@@ -1,0 +1,4 @@
+Offer
+    - code (VCA2142)
+    - description (20% off all products)
+    - discount (0.2)
