@@ -22,52 +22,7 @@
 <br>
 {%  endblock %}
 
-{%  block projects1  %}
-{% for project in projects %}
-<a href="{{project.project_url}}">
-<div class="card1 card mb-3" >
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="{{project.image_url}}" style="padding: 10px; margin-right: 0; height: 50px; width: 80px; overflow: hidden;" class=" rounded-start" alt="..."><br>
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title" style="color:white">{{project.name}}</h5>
-        <p class="card-text" style="color:white">{{project.description}}</p>
-      </div>
-    </div>
-  </div>
-</div>
-</a>
-<br>
-{% endfor %}
-{%  endblock %}
-
-<!-- lavendar hex: 9d84db -->
-
-
-{%  block projects4  %} <!-- WORKING -->
-{% for project in projects %}
-
-  <a href="{{project.project_url}}">
-    <div style="width: 300px" class="card1">
-      <img src="{{project.image_url}}" style="object-fit: cover; height: 200px; width: 100%; overflow: hidden; margin: auto;" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title" style="color:white">{{project.name}}</h5>
-        <p class="card-text" style="color:white">{{project.description}}</p>
-      </div>
-      <div class="card-footer">
-        <medium class="text-body-secondary">Last updated 3 mins ago</medium>
-      </div>
-    </div>
-  </a>
-<br>
-{% endfor %}
-{%  endblock %}
-
-
-
-{%  block projects2  %} <!-- WORKING -->
+{%  block projects2  %} <!-- WORKING, not using Django admin as of Aug 13 -->
 {% for project in projects %}
 <a href="{{project.project_url}}">
 <div class="card1 mb-3" style="max-width: 1000px;">
@@ -97,23 +52,157 @@
 {%  endblock %}
 
 
-{%  block projects3  %}
-{% for project in projects %}
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    <div class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-body-secondary">Last updated 3 mins ago</small>
+{%  block projects3  %} <!-- WORKING, in use as of Aug 13 -->
+<a href="https://www.im-creator.com/free/teamsaturn/saturn">
+<div class="card1 mb-3" style="max-width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-5" style="padding-left: 15px; border-right: 1px solid #3e3f40; margin-top: auto; margin-bottom: auto; margin-left: auto; margin-right: auto; ">
+      <img src="https://i.ibb.co/0mnpT7d/Saturn-Poster-pptx-1.png" style="border-radius: 25px; padding:15px; object-fit: cover; height: 230px; width: 100%; overflow: hidden; margin: auto;" class="card-img-top" alt="...">
+    </div>
+    <div class="col-md-4" style="border-right: 1px solid #3e3f40;">
+      <div class="card-body" style="padding: 15px">
+        <h5 class="card-title" style="color:white">Biomedical Engineering Intern at Stanford University</h5>
+        <p class="card-text" style="color:#e6e3e3">Prototyped, designed, and 3D modeled a novel medical device with two attachable modules to make epinephrine administration easy, safe, and painless during a life-threatening emergency.</p>
       </div>
     </div>
+
+    <div class="col-md-3">
+      <div class="card-body" style="padding: 15px; padding-right: 23px">
+        <h5 class="card-title" style="color:white">Skills</h5>
+        <p class="card-text" style="color:#e6e3e3">Biomedical Engineering, Biodesign, Medical Device Instrumentation, Electronic Integration, 3D Modeling, CADing, C++ Programming, Microcontrollers</p>
+      </div>
+    </div>
+
   </div>
 </div>
+  </a>
+<br>
 
-  {% endfor %}
+<a href="https://magic-lifescience.com/technology/">
+  <div class="card1 mb-3" style="max-width: 1000px;">
+    <div class="row g-0">
+      <div class="col-md-5" style="padding-left: 15px; border-right: 1px solid #3e3f40; margin-top: auto; margin-bottom: auto; margin-left: auto; margin-right: auto; ">
+        <img src="https://pbs.twimg.com/profile_banners/1534325697585352704/1654717858/1500x500" style="border-radius: 25px; padding:15px; object-fit: cover; height: 220px; width: 100%; overflow: hidden; margin: auto;" class="card-img-top" alt="...">
+      </div>
+      <div class="col-md-4" style="border-right: 1px solid #3e3f40;">
+        <div class="card-body" style="padding: 15px">
+          <h5 class="card-title" style="color:white">3D Modeling & Animation Intern at Magic LifeScience</h5>
+          <p class="card-text" style="color:#e6e3e3">3D modeled the company's patented molecular diagnostic device and animated the on-chip PCR on GMR nano-sensor technology. The animation is live on their website!</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card-body" style="padding: 15px; padding-right: 23px">
+          <h5 class="card-title" style="color:white">Skills</h5>
+          <p class="card-text" style="color:#e6e3e3">3D Modeling, Blender, Computer-Aided Design (CAD), 3D Animation, Biotechnology</p>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+</a>
+<br>
+
+<a href="https://github.com/CharlotteLaw/Chatbot">
+    <div class="card1 mb-3" style="max-width: 1000px;">
+      <div class="row g-0">
+        <div class="col-md-5" style="padding-left: 15px; border-right: 1px solid #3e3f40; margin-top: auto; margin-bottom: auto; margin-left: auto; margin-right: auto; ">
+          <img src="https://user-images.githubusercontent.com/69742430/244322572-155f7055-6bd4-4b3e-a5dd-a167f23e7c3d.png" style="border-radius: 25px; padding:15px; object-fit: cover; height: 220px; width: 100%; overflow: hidden; margin: auto;" class="card-img-top" alt="...">
+        </div>
+        <div class="col-md-4" style="border-right: 1px solid #3e3f40;">
+          <div class="card-body" style="padding: 15px">
+            <h5 class="card-title" style="color:white">Chatbot</h5>
+            <p class="card-text" style="color:#e6e3e3">Developed a personal chatbot/virtual assistant utilizing the GPT-3 open-source language model.</p>
+          </div>
+        </div>
+    
+        <div class="col-md-3">
+          <div class="card-body" style="padding: 15px; padding-right: 23px">
+            <h5 class="card-title" style="color:white">Skills</h5>
+            <p class="card-text" style="color:#e6e3e3">Python, Flask, MySQL, API Integration, Open AI, HTML, CSS</p>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+</a>
+<br>
+
+<a href="https://github.com/CharlotteLaw/Data-Science-on-Dogs">
+  <div class="card1 mb-3" style="max-width: 1000px;">
+    <div class="row g-0">
+      <div class="col-md-5" style="padding-left: 15px; border-right: 1px solid #3e3f40; margin-top: auto; margin-bottom: auto; margin-left: auto; margin-right: auto; ">
+        <img src="https://user-images.githubusercontent.com/69742430/260327800-6ad7697a-8401-4447-bc9e-e03dee3f4ded.png" style="border-radius: 25px; padding:15px; object-fit: cover; height: 220px; width: 100%; overflow: hidden; margin: auto;" class="card-img-top" alt="...">
+      </div>
+      <div class="col-md-4" style="border-right: 1px solid #3e3f40;">
+        <div class="card-body" style="padding: 15px">
+          <h5 class="card-title" style="color:white">Data Science on Dogs</h5>
+          <p class="card-text" style="color:#e6e3e3">Utilized data science and data visualization to perform analysis on a dog dataset sourced from the AKC (American Kennel Club). </p>
+          <p class="card-text" style="color:#e6e3e3">CS Kickstart @ UC Berkeley </p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card-body" style="padding: 15px; padding-right: 23px">
+          <h5 class="card-title" style="color:white">Skills</h5>
+          <p class="card-text" style="color:#e6e3e3">Data Science, Pandas, Numpy, Matplotlib, Jupyter Notebook, Data Analysis and Visualization</p>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+</a>
+<br>
+
+<a href="https://github.com/CharlotteLaw/Weatherly">
+      <div class="card1 mb-3" style="max-width: 1000px;">
+        <div class="row g-0">
+          <div class="col-md-5" style="padding-left: 15px; border-right: 1px solid #3e3f40; margin-top: auto; margin-bottom: auto; margin-left: auto; margin-right: auto; ">
+            <img src="https://user-images.githubusercontent.com/69742430/249253301-a0b842f0-8643-4aa6-ac05-9014febcb02d.png" style="border-radius: 25px; padding:15px; object-fit: cover; height: 220px; width: 100%; overflow: hidden; margin: auto;" class="card-img-top" alt="...">
+          </div>
+          <div class="col-md-4" style="border-right: 1px solid #3e3f40;">
+            <div class="card-body" style="padding: 15px">
+              <h5 class="card-title" style="color:white">Weatherly</h5>
+              <p class="card-text" style="color:#e6e3e3">Developed a web app that allows users to get information about the current temperature and weather condition of any city of choice.</p>
+            </div>
+          </div>
+      
+          <div class="col-md-3">
+            <div class="card-body" style="padding: 15px; padding-right: 23px">
+              <h5 class="card-title" style="color:white">Skills</h5>
+              <p class="card-text" style="color:#e6e3e3">Javascript, Node.js, EJS, HTML, CSS, API Integration</p>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </a>
+<br>
+
+<a href="https://github.com/CharlotteLaw/cs043_final_project/">
+  <div class="card1 mb-3" style="max-width: 1000px;">
+    <div class="row g-0">
+      <div class="col-md-5" style="padding-left: 15px; border-right: 1px solid #3e3f40; margin-top: auto; margin-bottom: auto; margin-left: auto; margin-right: auto; ">
+        <img src="https://user-images.githubusercontent.com/69742430/260327524-470023c1-628a-4155-929d-b647e19c34f6.png" style="border-radius: 25px; padding:15px; object-fit: cover; height: 220px; width: 100%; overflow: hidden; margin: auto;" class="card-img-top" alt="...">
+      </div>
+      <div class="col-md-4" style="border-right: 1px solid #3e3f40;">
+        <div class="card-body" style="padding: 15px">
+          <h5 class="card-title" style="color:white">Tic Tac Toe</h5>
+          <p class="card-text" style="color:#e6e3e3">A full stack Tic Tac Toe game developed with Python for 2 players that runs locally. Register, login, and play against each other on two different devices!</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <div class="card-body" style="padding: 15px; padding-right: 23px">
+          <h5 class="card-title" style="color:white">Skills</h5>
+          <p class="card-text" style="color:#e6e3e3">Python (using cookies, creating game server, using python database API), HTML/CSS, Game Design, Game Algorithm</p>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+</a>
+<br>
+
 {%  endblock %}
