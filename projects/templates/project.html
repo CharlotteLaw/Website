@@ -22,37 +22,6 @@
 <br>
 {%  endblock %}
 
-{%  block projects2  %} <!-- WORKING, not using Django admin as of Aug 13 -->
-{% for project in projects %}
-<a href="{{project.project_url}}">
-<div class="card1 mb-3" style="max-width: 1000px;">
-  <div class="row g-0">
-    <div class="col-md-5" style="padding-left: 15px; border-right: 1px solid #3e3f40; margin-top: auto; margin-bottom: auto; margin-left: auto; margin-right: auto; ">
-      <img src="{{project.image_url}}" style="border-radius: 25px; padding:15px; object-fit: cover; height: 220px; width: 100%; overflow: hidden; margin: auto;" class="card-img-top" alt="...">
-    </div>
-    <div class="col-md-4" style="border-right: 1px solid #3e3f40;">
-      <div class="card-body" style="padding: 15px">
-        <h5 class="card-title" style="color:white">{{project.name}}</h5>
-        <p class="card-text" style="color:#e6e3e3">{{project.description}}</p>
-      </div>
-    </div>
-
-    <div class="col-md-3">
-      <div class="card-body" style="padding: 15px; padding-right: 23px">
-        <h5 class="card-title" style="color:white">Skills</h5>
-        <p class="card-text" style="color:#e6e3e3">{{project.skills}}</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-  </a>
-<br>
-{% endfor %}
-{%  endblock %}
-
-
-
 {%  block projects3  %} <!-- WORKING, in use as of Aug 13 -->
 <a href="https://www.im-creator.com/free/teamsaturn/saturn">
 <div class="card1 mb-3" style="max-width: 1000px;">
